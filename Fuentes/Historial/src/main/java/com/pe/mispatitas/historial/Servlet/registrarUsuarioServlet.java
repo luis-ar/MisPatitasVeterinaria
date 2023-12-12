@@ -17,7 +17,6 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -47,15 +46,17 @@ public class registrarUsuarioServlet extends HttpServlet {
         String correoUsuario = request.getParameter("correoUsuario");
         String contraUsuario = request.getParameter("contraUsuario");
         String mensajeAlerta;
-        if ("".equals(nombreUsuario) || "".equals(telefonoUsuario) || "".equals(correoUsuario) || "".equals(correoUsuario)) {
+        if ("".equals(nombreUsuario) || "".equals(telefonoUsuario) || "".equals(correoUsuario) || "".equals(contraUsuario)) {
             mensajeAlerta = "todos los campos son obligatorios";
             request.setAttribute("mensajeAlerta", mensajeAlerta);
             request.getRequestDispatcher("/registrarUsuario.jsp").forward(request, response);
+            return;
         } else if (validarCorreo(correoUsuario) == false) {
             System.out.println("entro validar");
             mensajeAlerta = "no es un correo valido";
             request.setAttribute("mensajeAlerta", mensajeAlerta);
             request.getRequestDispatcher("/registrarUsuario.jsp").forward(request, response);
+            return;
         }
 
         List<Usuario> usuarios = dao.usuarioSel();
@@ -85,8 +86,7 @@ public class registrarUsuarioServlet extends HttpServlet {
 
         request.setAttribute("idUsuario", idUsuario);
         request.getRequestDispatcher("registrarMascota.jsp").forward(request, response);
-        
-        
+
     }
 
     private boolean validarCorreo(String correo) {

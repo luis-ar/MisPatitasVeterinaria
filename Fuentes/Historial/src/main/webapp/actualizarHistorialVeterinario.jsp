@@ -18,25 +18,31 @@
             <div class="nombreMascota">
                 <span>Actualizar historial Clinico</span>
             </div>
+            <c:if test="${not empty mensajeAlerta}">
+                        <div class="componenteError" style="border-left: 4px solid red; padding-left: 20px;text-transform: uppercase;background-color: white;text-align: center ">${mensajeAlerta}</div>
+                    </c:if>
             <div class="datosHistoialVeterinario" >
 
                 <form class="contenedorHistorialVeterinario" action="actualizarHistorial" method="post">
-                    <c:if test="${not empty mensajeAlerta}">
-                        <div class="componenteError" style="border-left: 4px solid red; padding-left: 20px;text-transform: uppercase;background-color: white;text-align: center ">${mensajeAlerta}</div>
-                    </c:if>
-                    <input style="display: none" type="text" name="idHistorial" value=${idHistorial}>
+                    
+                        <input style="display: none"  type="text" name="idHistorial" value=${idHistorial}>
                     <div>
+                        <!--  
+                        <div>
+                                                    <h5>Cod. veterinario</h5>
+                                                </div>-->
                         <input style="display: none"  id="codVeterinario" name="codigoVeterinario" type="text">
 
                         <div class="camposHistorilaVeterinario">
                             <div>
                                 <h5>Cod. mascota</h5>
-                                <input name="codigoMascota" type="number">
+                                <input name="codigoMascota" type="number" value=${listaHistorial.idMascota} readonly="true" >
                             </div>
+                            
                         </div>
                         <div>
                             <h5>Descripcion de Sintomas</h5>
-                            <textarea name="descripcionSintomas" maxlength="200" style="width: 100%;height: 100px;resize: none;padding: 10px"></textarea>  
+                            <textarea value=${listaHistorial.descripcion} name="descripcionSintomas" maxlength="200" style="width: 100%;height: 100px;resize: none;padding: 10px">${listaHistorial.descripcion}</textarea>  
                         </div>
 
                     </div>
@@ -44,12 +50,12 @@
                     <div>
                         <div>
                             <h5 class="subIntranet">¿Fecha?</h5>
-                            <input name="fecha" style="padding-left: 10px" type="date" placeholder="H 0 M">
+                            <input value=${listaHistorial.fechaHistorial} name="fecha" style="padding-left: 10px" type="date" placeholder="H 0 M">
 
                         </div>
                         <div>
                             <h5>Descripcion del Tratamiento</h5>
-                            <textarea  name="tratamiento"maxlength="200" style="width: 100%;height: 100px;resize: none;padding: 10px"></textarea>  
+                            <textarea name="tratamiento"maxlength="200" style="width: 100%;height: 100px;resize: none;padding: 10px">${listaHistorial.tratamiento} </textarea>  
                         </div>
 
                     </div>

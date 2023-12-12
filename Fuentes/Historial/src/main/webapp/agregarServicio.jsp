@@ -32,7 +32,7 @@
                 <h5  class="subIntranet" style="font-size: 20px;margin-bottom: -10px;">Seleccione Foto del Servicio</h5>
 
                 <div style="width: 100%;height:50px;position: relative;">
-                    <input onchange="return validarExt()" id="archivoInput" autocomplete="off" type="file" class="datos"  placeholder="Seleccione la imagen" style="padding-left:10px;font-size: 20px;width: 100%;" name="imagenServicio" >
+                    <input id="archivoInput" onchange="return validarExt()" autocomplete="off" type="file" class="datos"  placeholder="Seleccione la imagen" style="padding-left:10px;font-size: 20px;width: 100%;" name="imagenServicio" >
                 </div>
                 <button class="datos" style="color: white;background-color: black;cursor: pointer;">Registrar Servicio</button>
 

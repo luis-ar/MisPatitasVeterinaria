@@ -50,6 +50,29 @@ public class loginServlet extends HttpServlet {
         }
         DaoUsuario daoUsuario = new DaoUsuarioImpl();
         List<Usuario> usuarios = daoUsuario.usuarioSel();
+         DaoVeterinario dao = new DaoVeterinarioImpl();
+        List<Veterinario> veterinarios = dao.veterinarioSel();
+        boolean correoRegistrado = false;
+
+        for (Usuario usuario : usuarios) {
+            if (usuario.getCorreoUsuario().equals(correo)) {
+                correoRegistrado = true;
+                break; // Si encontraste el correo, no necesitas seguir buscando
+            }
+        }
+        for (Veterinario veterinario : veterinarios) {
+            if (veterinario.getCorreo().equals(correo)) {
+                correoRegistrado = true;
+                break; // Si encontraste el correo, no necesitas seguir buscando
+            }
+        }
+        if (!correoRegistrado) {
+            // El correo no está registrado, realiza la redirección
+            mensajeAlerta = "Usuario no encontrado";
+            request.setAttribute("mensajeAlerta", mensajeAlerta);
+            request.getRequestDispatcher("/index.jsp").forward(request, response);
+        }
+
         for (Usuario usuario : usuarios) {
             if (usuario.getCorreoUsuario().equals(correo) && usuario.getContra().equals(contra)) {
                 System.out.println("Buscando usuario");
@@ -62,8 +85,7 @@ public class loginServlet extends HttpServlet {
                 return;
             }
         }
-        DaoVeterinario dao = new DaoVeterinarioImpl();
-        List<Veterinario> veterinarios = dao.veterinarioSel();
+       
         for (Veterinario veterinario : veterinarios) {
             if (veterinario.getCorreo().equals(correo) && veterinario.getContra().equals(contra)) {
                 System.out.println("Buscando veterinario");
@@ -76,7 +98,7 @@ public class loginServlet extends HttpServlet {
         }
 
         // Si no se encontró ni en usuarios ni en veterinarios
-        mensajeAlerta = "Correo o contraseña incorrecta";
+        mensajeAlerta = "Contraseña incorrecta";
         request.setAttribute("mensajeAlerta", mensajeAlerta);
         request.getRequestDispatcher("/index.jsp").forward(request, response);
 

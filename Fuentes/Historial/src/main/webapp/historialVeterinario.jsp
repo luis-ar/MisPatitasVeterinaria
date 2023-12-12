@@ -43,6 +43,10 @@
             <div class="nombreMascota">
                 <span>Historial Clinico </span>
             </div>
+            <!--            <div class="textoBuscar">
+                            <input id="filtroMascotas" class="entradaTexto" type="text" placeholder="Buscar Historial">
+            
+                        </div>-->
                 <div class="btnAgregar">
                     <a href="" id="btnAgregar">Agregar Historial</a>
                 </div>
@@ -57,6 +61,7 @@
                     <table border=1 class="tablaHistorial">
 
                         <tr>
+
                             <th colspan="2">Opciones</th>
 
 
@@ -67,11 +72,16 @@
                             <th>Tratamiento</th>
 
                         </tr>
-                        <tr>
-                        <form action="recuperarIDHistorial" method="post">
-                            <td><button name="actualizar" value=${listaHistorial.idHistorial} > 
 
-                                    <a href="/Integrador/actualizarHistorial">
+
+                        <tr>
+
+                        <form action="recuperarIDHistorial" method="post">
+                            <td>
+                                <input name="idMascota" type="hidden" value="${listaHistorial.idMascota}" />
+                                <button name="actualizar" value=${listaHistorial.idHistorial} > 
+
+                                    <a href="/Historial/actualizarHistorial">
                                         <i class='bx bxs-pencil'></i>
                                     </a>
                                 </button>
@@ -106,12 +116,14 @@
             // Obtener idUsuario del localStorage
             const idVeterinario = localStorage.getItem('idVeterinario');
             const url = new URL(window.location.href);
+
             const idMascota = url.searchParams.get("idMascota");
+            localStorage.getItem("idMascota", idMascota)
+
             // Verificar si idUsuario es válido antes de modificar el enlace
             if (idVeterinario) {
                 // Modificar el enlace del botón de historial con el idUsuario
                 const btnAgregar = document.getElementById('btnAgregar');
-                localStorage.setItem("idMascota",idMascota)
                 btnAgregar.href = "<%= request.getContextPath() %>/registrarHistorialVeterinario.jsp?idVeterinario=" + idVeterinario + "&idMascota=" + idMascota;
             }
         </script>

@@ -1,51 +1,51 @@
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\contactoVeterinarioServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\test\Test.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\entidad\Mascota.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\MostrarServicioServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\GenerarInformeServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\DaoContacto.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\listarMascotaServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\RecuperarIdServicioServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\impl\DaoMascotaImpl.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\test\TextCrudContacto.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\registroContactoServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\entidad\Usuario.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\DaoMascota.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\listarHistorialUsuarioServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\DaoUsuario.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\ReporteHistorialServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\EliminarServicioServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\test\TestCrudMacota.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\UtilCorreo.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\loginServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\registrarUsuarioServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\eliminarHistorialServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\entidad\Contacto.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\registroHistorialServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\entidad\Servicio.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\MensajeServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\RegistroServicioServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\test\TextCrudHistorial.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\mascotaVeterinarioServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\impl\DaoUsuarioImpl.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\ActualizarServicioServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\EnvioCorreoServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\DaoHistorialClinico.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\DaoVeterinario.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\impl\DaoVeterinarioImpl.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\impl\DaoContactoImpl.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\util\Conexion.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\registroMascotaServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\resources\JakartaEE10Resource.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\impl\DaoHistorialClinicoImpl.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\actualizarHistorialServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\recuperarIDHistorialServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\test\TextCrudUsuario.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\entidad\Veterinario.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\test\TextCrudVeterinario.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\DaoServicio.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\historialServlet.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\JakartaRestConfiguration.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\impl\DaoServicioImpl.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\entidad\HistorialClinico.java
-D:\CICLO6_SJL\Integrador\VeterinariaMisPatitas\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\MostrarServicioUsuarioServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\test\Test.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\impl\DaoMascotaImpl.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\entidad\Veterinario.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\impl\DaoHistorialClinicoImpl.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\util\Conexion.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\ActualizarServicioServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\ReporteHistorialServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\MostrarServicioUsuarioServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\contactoVeterinarioServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\loginServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\DaoMascota.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\impl\DaoUsuarioImpl.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\entidad\Mascota.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\actualizarHistorialServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\recuperarIDHistorialServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\test\TextCrudUsuario.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\DaoUsuario.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\listarHistorialUsuarioServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\test\TextCrudHistorial.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\JakartaRestConfiguration.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\DaoVeterinario.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\listarMascotaServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\RegistroServicioServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\entidad\HistorialClinico.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\impl\DaoVeterinarioImpl.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\entidad\Usuario.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\historialServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\impl\DaoContactoImpl.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\impl\DaoServicioImpl.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\MensajeServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\UtilCorreo.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\DaoHistorialClinico.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\MostrarServicioServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\registrarUsuarioServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\test\TextCrudContacto.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\resources\JakartaEE10Resource.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\mascotaVeterinarioServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\EnvioCorreoServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\test\TextCrudVeterinario.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\registroMascotaServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\eliminarHistorialServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\EliminarServicioServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\GenerarInformeServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\RecuperarIdServicioServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\registroContactoServlet.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\test\TestCrudMacota.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\DaoServicio.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\entidad\Contacto.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\dao\DaoContacto.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\entidad\Servicio.java
+C:\Users\Luis Santos\Downloads\VeterinariaMisPatitas-2023-001\Fuentes\Historial\src\main\java\com\pe\mispatitas\historial\Servlet\registroHistorialServlet.java

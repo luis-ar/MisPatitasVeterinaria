@@ -45,6 +45,14 @@ public class EnvioCorreoServlet extends HttpServlet {
         String correoRemitente = request.getParameter("email");
 
         String mensaje = request.getParameter("mensaje");
+                String mensajeAlerta;
+
+        if ("".equals(mensaje)) {
+            mensajeAlerta = "todos los campos son obligatorios";
+            request.setAttribute("mensajeAlerta", mensajeAlerta);
+            request.getRequestDispatcher("contacto.jsp").forward(request, response);
+        
+        }
       
         Properties proo = new Properties();
         try (InputStream input = UtilCorreo.class.getClassLoader().getResourceAsStream("config.properties")) {

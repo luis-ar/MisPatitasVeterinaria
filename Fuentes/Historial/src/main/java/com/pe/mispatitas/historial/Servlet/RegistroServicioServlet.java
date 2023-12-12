@@ -18,6 +18,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.Part;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -42,6 +44,10 @@ public class RegistroServicioServlet extends HttpServlet {
         DaoServicio dao = new DaoServicioImpl();
         String nombreServicio = request.getParameter("nombreServicio");
         String descripcionServicio = request.getParameter("descripcionServicio");
+
+//        String imagenPrede = request.getParameter("imagenBase");
+//        byte[] bytes = imagenPrede.getBytes();
+//        InputStream inputStreamPredeterminado = new ByteArrayInputStream(bytes);
         String mensajeAlerta;
         Part part = request.getPart("imagenServicio");
         InputStream inputStream = part.getInputStream();
@@ -49,19 +55,43 @@ public class RegistroServicioServlet extends HttpServlet {
             mensajeAlerta = "todos los campos son obligatorios";
             request.setAttribute("mensajeAlerta", mensajeAlerta);
             request.getRequestDispatcher("agregarServicio.jsp").forward(request, response);
+            return;
+        } else if (!esAlfanumerico(nombreServicio)) {
+            System.out.println("La cadena no es alfanumérica.");
+
+            mensajeAlerta = "Nombre del servicio invalido";
+            request.setAttribute("mensajeAlerta", mensajeAlerta);
+            request.getRequestDispatcher("agregarServicio.jsp").forward(request, response);
+            return;
+
         } else {
             if (part.getSize() == 0) {
-              
-            response.sendRedirect(request.getContextPath() + "/MostrarServicio");
+////                 System.out.println("prueba"+inputStream);
+////                System.out.println("prueba111"+inputStreamPredeterminado);
+////                 Servicio cat = new Servicio(null, nombreServicio, descripcionServicio,inputStreamPredeterminado);
+//            dao.servicioIns(cat);
+                response.sendRedirect(request.getContextPath() + "/MostrarServicio");
             } else {
-                 Servicio cat = new Servicio(null, nombreServicio, descripcionServicio, inputStream);
-            dao.servicioIns(cat);
-            response.sendRedirect(request.getContextPath() + "/MostrarServicio");
+                Servicio cat = new Servicio(null, nombreServicio, descripcionServicio, inputStream);
+                dao.servicioIns(cat);
+                response.sendRedirect(request.getContextPath() + "/MostrarServicio");
             }
-           
 
         }
+    }
 
+    public static boolean esAlfanumerico(String cadena) {
+        // Define la expresión regular para caracteres alfanuméricos
+        String patron = "^[a-zA-Z0-9]+$";
+
+        // Compila la expresión regular en un patrón
+        Pattern pattern = Pattern.compile(patron);
+
+        // Crea un objeto Matcher para la cadena dada
+        Matcher matcher = pattern.matcher(cadena);
+
+        // Realiza la validación y devuelve el resultado
+        return matcher.matches();
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

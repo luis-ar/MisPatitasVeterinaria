@@ -8,7 +8,7 @@ public class Conexion {
 
     private final String URL = "jdbc:mysql://localhost:3306/veterinaria";
     private final String DRIVER = "com.mysql.cj.jdbc.Driver";
-    private final String USER = "admin";
+    private final String USER = "luisAr";
     private final String PASS = "123456";
 
     public Connection getConexion() throws SQLException {

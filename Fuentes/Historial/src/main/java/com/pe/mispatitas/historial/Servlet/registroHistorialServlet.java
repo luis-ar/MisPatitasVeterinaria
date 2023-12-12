@@ -41,13 +41,16 @@ public class registroHistorialServlet extends HttpServlet {
         String tratamiento = request.getParameter("tratamiento");
         String fecha = request.getParameter("fecha");
         String mensajeAlerta;
-        if ("".equals(request.getParameter("codigoVeterinario")) || "".equals(request.getParameter("codigoMascota"))||"".equals(descripcionSintomas)||"".equals(tratamiento)||"".equals(fecha)) {
-            mensajeAlerta="todos los campos son obligatorios";
+        if ("".equals(request.getParameter("codigoVeterinario")) || "".equals(request.getParameter("codigoMascota")) || "".equals(descripcionSintomas) || "".equals(tratamiento) || "".equals(fecha)) {
+            mensajeAlerta = "todos los campos son obligatorios";
+            System.out.println("entro a verificar el historial");
             request.setAttribute("mensajeAlerta", mensajeAlerta);
             request.getRequestDispatcher("/registrarHistorialVeterinario.jsp").forward(request, response);
+            System.out.println("entro a verificar el historial 22");
             return;
+
         }
-        
+
         HistorialClinico cat = new HistorialClinico(null, codigoVeterinario, codigoMascota, fecha, descripcionSintomas, tratamiento);
         dao.historialIns(cat);
 

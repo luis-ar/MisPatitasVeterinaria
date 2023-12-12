@@ -1,3 +1,4 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -15,6 +16,7 @@
             <section class="contact-form">
                 <h2>Formulario de Contacto</h2>
                 <form action="EnvioCorreo" method="post" id="miFormulario">
+                   
                     <c:if test="${not empty mensajeAlerta}">
                         <div class="componenteError" style="border-left: 4px solid red; padding-left: 20px;text-transform: uppercase;background-color: white;text-align: center ">${mensajeAlerta}</div>
                     </c:if>

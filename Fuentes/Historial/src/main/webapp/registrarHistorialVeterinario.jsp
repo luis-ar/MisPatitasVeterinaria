@@ -36,22 +36,22 @@
             <div class="nombreMascota">
                 <span>Registrar historial Clinico</span>
             </div>
-
+            <c:if test="${not empty mensajeAlerta}">
+                <div class="componenteError" style="border-left: 4px solid red; padding-left: 20px;text-transform: uppercase;background-color: white;text-align: center ">${mensajeAlerta}</div>
+            </c:if>
             <div class="datosHistoialVeterinario" >
-                <c:if test="${not empty mensajeAlerta}">
-                    <div class="componenteError" style="border-left: 4px solid red; padding-left: 20px;text-transform: uppercase;background-color: white;text-align: center ">${mensajeAlerta}</div>
-                </c:if>
+
                 <form class="contenedorHistorialVeterinario" action="registroHistorial" method="post">
 
                     <div>
                         <div>
                             <h5>Cod. veterinario</h5>
-                            <input id="codigoVeterinario" name="codigoVeterinario" type="number" readonly>
+                            <input id="codigoVeterinario" name="codigoVeterinario" type="number" readonly="true">
                         </div>
                         <div class="camposHistorilaVeterinario">
                             <div>
                                 <h5>Cod. mascota</h5>
-                                <input id="codigoMascota" name="codigoMascota" type="number" readonly>
+                                <input id="codigoMascota" name="codigoMascota" type="number" readonly="true">
                             </div>
                         </div>
                         <div>
@@ -64,7 +64,7 @@
                     <div>
                         <div>
                             <h5 class="subIntranet">¿Fecha?</h5>
-                            <input type="date" id="fechaInput" name="fecha"  style="padding-left: 10px" />
+                            <input type="date" id="fechaInput" name="fecha"  style="padding-left: 10px" readonly="true" />
 
 
                         </div>
@@ -82,6 +82,11 @@
                 </form>
 
 
+
+
+
+
+
             </div>
 
 
@@ -96,8 +101,7 @@
             // Obtener el valor del parámetro idVeterinario
             const idVeterinario = params.get('idVeterinario');
             const idMascota = params.get('idMascota');
-            const idVeterinarioRespadol = localStorage.getItem("idVeterinario")
-            const idMascotaRespadol = localStorage.getItem("idMascota")
+
             // Verificar si idVeterinario es válido
             if (idVeterinario && idMascota) {
                 // Puedes usar idVeterinario aquí
@@ -106,11 +110,7 @@
                 codigoVeterinario.value = idVeterinario;
                 codigoMascota.value = idMascota;
             } else {
-                const codigoVeterinario = document.getElementById("codigoVeterinario");
-                const codigoMascota = document.getElementById("codigoMascota");
-                codigoVeterinario.value = idVeterinarioRespadol;
-                codigoMascota.value = idMascotaRespadol;
-
+                console.log('El parámetro idVeterinario no está presente en la URL.' + idMascota);
             }
         </script>
     </body>

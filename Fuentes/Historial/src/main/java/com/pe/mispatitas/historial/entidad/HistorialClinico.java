@@ -13,7 +13,6 @@ public class HistorialClinico {
     private String fechaHistorial;
     private String descripcion;
     private String tratamiento;
-    private String nombreVeterinario;
 private String nombreMascota;
     public HistorialClinico() {
     }
@@ -27,19 +26,9 @@ private String nombreMascota;
         this.tratamiento = tratamiento;
     }
 
-    public String getNombreVeterinario() {
-        return nombreVeterinario;
-    }
-
-    public void setNombreVeterinario(String nombreVeterinario) {
-        this.nombreVeterinario = nombreVeterinario;
-    }
-
-    
     public String getNombreMascota() {
         return nombreMascota;
     }
-    
 
     public void setNombreMascota(String nombreMascota) {
         this.nombreMascota = nombreMascota;

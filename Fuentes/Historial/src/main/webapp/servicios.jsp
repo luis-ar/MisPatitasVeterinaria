@@ -42,7 +42,7 @@
                             <div class="link" style="display: flex;justify-content: center;gap: 20px">
                                 <form action="RecuperarIdServicio" method="post">
                                     <input name="imagenModificar" value="${g.foto}" type="hidden" />
-                                    <button id="servicioEditar" onclick="editarSer()" name="actualizar" value="${g.idServicio}" style="cursor: pointer;background-color: #0D93CD;color: white;padding: 10px">Editar</button>
+                                    <button name="actualizar" value="${g.idServicio}" style="cursor: pointer;background-color: #0D93CD;color: white;padding: 10px">Editar</button>
                                 </form>
                                 <form action="EliminarServicio" method="post">
                                     <button name="eliminar" value="${g.idServicio}" style="cursor: pointer;background-color: #D42A2A;color: white;padding: 10px">Eliminar</button>
@@ -62,14 +62,7 @@
             </section>
         </div>
 
-        <script>
-            const valor = document.getElementById("servicioEditar").value;
-           
 
-            const editarSer = () => {
-                localStorage.setItem("idServicio", valor)
-            }
-        </script>
 
 
 

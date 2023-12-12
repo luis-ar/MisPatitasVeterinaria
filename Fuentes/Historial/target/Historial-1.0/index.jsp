@@ -42,6 +42,13 @@
                         <font style="vertical-align: inherit;">O</font></font></span>
 
                 </div>
+                <!--
+                                <div class="caja1" style="display: flex;align-items: center; justify-content: center">
+                                    <button class="datos continuar" style="width: 50%;margin-right: 15px;" id="googleLogin"><img class="iconoRedes" height="28px" alt="google logo" src="./img/google.png" style="margin-right: 10px;">continuar con Google</button>
+                
+                                   <button class="datos continuar" style="width: 50%;" id="facebookLogin"><img class="iconoRedes" height="28px" alt="github logo" src="./img/facebook.png" style="margin-right: 10px;">continuar con Facebook</button>
+                
+                                </div>-->
                 <div style="display: flex" >
                     <p>¿Aún no eres cliente? <a href="/Historial/registrarUsuario.jsp" style="color: blue">Registrate aqui</a></p>
                 </div>
